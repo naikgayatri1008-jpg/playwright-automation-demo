@@ -3,8 +3,33 @@
     "username": "rahulshettyacademy",
     "password": "Learning@830$3mK2"
   },
-  "invalidUser": {
+  "invalidUsers": [
+  {
+    "testCase": "Invalid username and password",
     "username": "wronguser",
-    "password": "wrongpassword"
+    "password": "wrongpassword",
+    "expectedMessage": "Incorrect username/password"
+  },
+
+  {
+    "testCase": "Empty username",
+    "username": "",
+    "password": "Learning@830$3mK2",
+    "expectedMessage": "Empty username/password."
+  },
+    
+  {
+    "testCase": "Empty password",
+    "username": "rahulshettyacademy",
+    "password": "",
+    "expectedMessage": "Empty username/password."
+  },
+
+  {
+    "testCase": "Empty credentials",
+    "username": "",
+    "password": "",
+    "expectedMessage": "Empty username/password."
   }
+]
 }

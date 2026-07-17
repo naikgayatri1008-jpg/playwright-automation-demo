@@ -20,9 +20,5 @@ class LoginPage {
         await this.loginButton.click();
     }
 
-    async getErrorMessage()
-    {
-        return this.errorMessage;
-    }
 }
 module.exports = {LoginPage};
