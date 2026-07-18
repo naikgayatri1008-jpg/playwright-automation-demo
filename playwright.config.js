@@ -12,7 +12,7 @@ const config = ({
   use: {
     baseURL: "https://rahulshettyacademy.com/loginpagePractise",
     browserName: 'chromium',
-    headless: false,
+    headless: true,
   },
 });
 module.exports= config
