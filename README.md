@@ -21,7 +21,7 @@ playwright-framework/
 │
 ├── tests/
 │   ├── login.spec.js
-│   └── userFlow.spec.js
+│   └── loginuserFlow.spec.js
 │
 ├── testdata/
 │   └── users.json
@@ -44,7 +44,6 @@ playwright-framework/
 - Reusable login methods
 - Base URL configuration
 - Smoke and Regression test tagging
-- Parallel test execution
 ### Sprint 3
 - Complete user login workflow
 - Radio button handling
