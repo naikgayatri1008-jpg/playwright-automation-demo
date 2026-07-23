@@ -1,4 +1,7 @@
 # Playwright Automation Framework
+
+[![Playwright Tests](https://github.com/naikgayatri1008-jpg/playwright-automation-demo/actions/workflows/playwright.yml/badge.svg)](https://github.com/naikgayatri1008-jpg/playwright-automation-demo/actions/workflows/playwright.yml)
+
 A UI test automation framework built using **Playwright** and **JavaScript**, following the **Page Object Model (POM)** design pattern.
 This project automates common user workflows and demonstrates best practices for building maintainable and scalable test automation.
 
