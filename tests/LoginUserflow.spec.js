@@ -6,26 +6,26 @@ const users = require('../testdata/users.json');
 
 test.describe("Login User Workflow", () => {
 
-    test('Complete Login User Form', async({browser,page}) => {
-        const loginpage = new LoginPage(page);
-        await loginpage.goTo();
-        await loginpage.enterUsername(users.validUser.username);
-        await loginpage.enterPassword(users.validUser.password);
+    test('Complete Login User Form', async({page}) => {
+        const loginPage = new LoginPage(page);
+        await loginPage.goTo();
+        await loginPage.enterUsername(users.validUser.username);
+        await loginPage.enterPassword(users.validUser.password);
 
-        await loginpage.selectRole('user');
-        await expect(loginpage.userPopUpOK).toBeVisible();
+        await loginPage.selectRole('user');
+        await expect(loginPage.userPopUpOK).toBeVisible();
 
-        await loginpage.confirmUserPopup();
+        await loginPage.confirmUserPopup();
 
-        await loginpage.selectAccountType("Consultant");
-        await expect(loginpage.selectDropdown).toHaveValue("consult");
+        await loginPage.selectAccountType("Consultant");
+        await expect(loginPage.selectDropdown).toHaveValue("consult");
         
-        await loginpage.acceptTerms();
-        await expect(loginpage.termsCheckbox).toBeChecked();
+        await loginPage.acceptTerms();
+        await expect(loginPage.termsCheckbox).toBeChecked();
         
-        await loginpage.clickSignIn();
+        await loginPage.clickSignIn();
         await expect(page).toHaveURL("https://rahulshettyacademy.com/angularpractice/shop");
-    
+
     })
 
 });
